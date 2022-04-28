@@ -1,0 +1,181 @@
+<!-- 
+Para fazer um comentario
+<!-- -- shift.
+HTML - Hypertext Markup Language
+
+<meta charset="utf-8" />
+Sempre colocar no inicio de todo código em head, ajeita o problema de codifiação da fonte
+
+HTML funciona por meio de TAGs, Para inicio < >, para fechamento </ >
+Como se constroi, tag com inicio e fim:
+<NomeTag> </NomeTag>
+
+Não precisa de inicio e fim, tem apenas um ponto:
+<NomeTag />
+
+Atributos:
+Como se constroi:
+<NomeTag atributo="valor"> Influenciado </NomeTag>
+
+Dentro do <head></head>:
+Tudo que o site vai precisar, tudo que seja de configuração, importação de recursos
+
+Dentro do <body></body>:
+Toda a pagina, todo o conteudo, texto, imagem, menu etc estará aqui
+
+Para saltar linha:
+<br />
+
+Para adicionar uma imagem:
+alt = alternative, caso não dê certo abrir a imagem
+Tittle vai servir para quando a pessoa passar o mouse em cima do texto ou imagem, aparecer mais informações sobre tal coisa
+src = source, fonte, a origem do arquivo, onde se localiza 
+
+<img alt="" 
+tittle=""
+src=""/>
+
+Tag <a> Texto</a>
+É responsavel pela criação de links. Ou seja, ao clicar no texto que está entre essa tag, o usuario será redirecionado para outra página.
+
+Tag <p> </p>
+É uma tag para definir um paragrafo e poder mexer nele no CSS
+
+Tags:
+Header
+Nav - Navegação - Menu
+
+Article - Conteudo
+Div;Section;
+
+Aside
+
+Footer
+
+Todo formulário é criado pela Tag:
+<form></form>
+o form tem três atributos importantes:
+
+
+<form enctype="application/x-www-form-urlencoded"> </form>
+Esse é o padrão, vai codificar todos os envios dos formulários, todo espaço vai ser substituido por sinal de + e vai substituir todos os caracteres especiais por código ASC, ou seja ele vai adaptar os seus dados, para eles serem melhor enviados.
+
+
+<form enctype="multipart/form-data"> </form>
+Esse vai enviar os dados como está, mas é o unico tipo que envia arquivos, então se você tem um form que tem que enviar uma imagem, um arquivo, tem que usar esse atributo.
+                
+
+<form enctype="text/plain"> </form>
+Esse é um texto puro, vai enviar assim como digitar, substitui apenas o espaço por sinal de +.
+
+Já o outro atributo method="", só existem dois tipos no HTML, caso queira usar outros tipos como put, option tem que fazer o envio via JavaScript, são eles:
+
+
+<form method="get"></form>
+Vai enviar todos os dados pela URL, endereço do site.
+
+
+<form method="post"></form>
+Vai enviar todos os dados pelo corpo da requisição.
+
+
+<form action=""></form>
+Para onde nós vamos enviar os dados.
+
+
+
+<label></label>
+Recomendado sempre que for descrever o nome de um campo.
+
+<input type="text" />
+Vai receber a informação que requisitou no label, tem varios tipois de type, como text, email, reset, tel etc. 
+
+<input placeholder="Digite seu nome completo">
+É a marca d'água do campo.
+
+<input id="" />
+Significa o identificador único da página.
+
+<textarea name="Mensagem">asd </textarea>
+É como se fosse um input, do tipo de texto e ainda pode saltar linha.
+
+
+
+<iframe http://www.jpenergiasolar.com.br/></iframe>
+Vai permitir colocar qualquer coisa dentro de um quadrado. Utilizado quando é preciso colocar um mapa, propraganda etc.
+
+
+Tag <h> </h>
+Serve para definir um título
+
+
+<strong> Texto </strong>
+Deixa o texto entre essa tag em negrito.
+
+
+Link é criado por meio da tag a:
+href é o link pra onde vai mandar quando clicar no item
+<a tittle="" href="link"> </>
+
+width="tamanho" em img, serve para definir o tamanho da imagem
+
+-->
+
+
+<!-- 
+Existem 3 CSS, por ordem de prioridades:
+
+CSS Inline, CSS Interno, CSS externo
+se tiver conflito na pag, ganha o de maior prioridade
+Porém se quiser que, por exemplo, o CSS interno seja prioridade, então faz, dentro do header{}, por exemplo: 
+
+background-color: cor !important
+
+CSS Inline: style="background-color: green"
+
+CSS Interno: <style type="text/css">
+                (selector){
+                   propriedade: valor;
+                
+               }
+        </style>
+
+CSS Externo: Está fora do arquivo do codigo html principal, cria-se outro arquivo.
+
+comentario no css é /* */
+
+
+
+Fontes serifadas: Tem retoques "melohores" nas pontas, para melhor leitura, melhor para jornais, revistas, já para sites são melhores fontes não serifadas, como Arial, em geral sans-serif, que escolhe uma fonte aleatoria sem serifa.
+
+margin: margem externa.
+padding: margem interna.
+
+padding-bottom: 15px;
+padding-top: 15px;
+padding-left: 50px;
+padding-right: 50px;
+Ou simplesmente, apresentando 2 pontos: 15px, superior e inferior, 50 px, direita e esquerda
+Ou apresentando 4 pontos, que vai no sentido horario: 
+padding: 10px 20 px 30 px 40 px;
+Em que 10px é o superior, 20px direita, 30px inferior e 40px esquerda
+
+
+border-style: inset ou outset;
+Deixam com um efeito 3d
+
+@media screen
+É tipo um when ..., olhar em style.css como se constroi
+
+
+
+Como tudo se inicia:
+-->
+
+<html>
+    <head></head>
+    <body>
+        Oi, tudo bem? Me chamo João Henrique!
+    </body>
+
+</html>

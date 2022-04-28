@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+@font-face{
+    font-family: "Existence";
+    src: url("fonts/Existence-Light.otf");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.clearfix{
+    clear: both;
+}
+
+body{
+    margin: 0px;
+    font-family: "Raleway", "Existence", "Arial", sans-serif;
+}
+
+.barra_superior{
+    border-bottom: 1px solid rgb(204, 204, 204);
+    color: rgb(187, 187, 187);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav{
+    color: rgb(187, 187, 187); 
+    font-size: 12px;
+    float: right;
+    margin-top: 60px
+}
+
+nav a{
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+}
+
+nav a.btn_destaque{
+    margin-left: 25px;
+}
+
+.btn_destaque, .metade input[type=submit]{
+    border: none;
+    background-color: rgb(255, 77, 77);
+    color: white;
+    padding: 12px 40px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(187, 187, 187);
+}
+
+.sec01{
+    height: 700px;
+    color: white;
+    background-image: url(../img/fundobody3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sec01 p.titulo{
+    font-size: 48px;
+    padding-top: 300px;
+}
+
+.sec01 p{
+    font-size: 24px;
+    padding-bottom: 30px;
+    line-height: 110%;
+    
+}
+
+.sec02{
+    border-bottom: 1px solid rgb(204, 204, 204);
+    line-height: 150%;
+}
+
+.sec02 p{
+    font-size: 28px;
+    text-align: center;
+}
+
+.sec02 img{
+    width: 100%; 
+    margin-bottom: 50px;
+}
+
+.sec03{
+    background-color: rgb(239, 243, 249); 
+    height: 664px;
+}
+
+.sec03 p{
+    font-size: 54px;
+    line-height: 115%;
+    color: rgb(102, 102, 102);
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+
+}
+
+.metade{
+    width: 50%;
+    float: left;
+}
+
+.fundobody6{
+    padding-top: 38px;
+}
+
+.fundobody6 .img_sec03{
+    width: 664px;
+}
+
+.rodapedireitos{
+    background-color: rgb(255, 77, 77);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.rodapedireitos a{
+    color: white;
+}
+
+.quadro123{
+    width: 33%;
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.quadro123, .quadro123 a{
+    color: rgb(136, 136, 136);
+}
+
+.quadro123 .logo{
+    width: 100%;
+}
+
+.quadro123 img{
+    width: 28px;
+}
+
+.margin_left{
+    margin-left: 40px;
+}
+
+
+
+
+
+
+.sec_fale, .sec_onde{
+    height: 500px;
+    background-color: #FAFAFA;
+}
+
+.sec_fale .metade{
+    padding-top: 100px;
+}
+
+.metade{
+    width: 50%;
+    float: left;
+    line-height: 150%;
+    color: rgb(120, 120, 120);
+}
+
+.metade div, .metade address{
+    margin-left: 40px;
+}
+
+.metade form{
+    line-height: 250%;
+}
+
+.metade form input[type=text], textarea{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 63%;
+    background-color: #FAFAFA;
+    padding-top: 10px;
+}
+
+.metade textarea{
+    min-height: 100px;
+}
+
+.metade input[type=submit]{
+    float: right;
+    margin-right: 80px;
+}
+
+.metade img{
+    width: 35px;
+}
+
+.metade label{
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+
+
+/* Para Smartphones */
+@media screen and (max-width: 580px){
+    
+    .barra_superior .container{
+    margin-left: 10px;
+    }
+    
+    .logo{
+        width: 100%;
+    }
+    
+    nav{
+        float: none;
+        margin-left: 15px;
+        text-align: center;
+        font-size: 17px;
+    }
+    
+    nav .btn_destaque{
+        margin-left: 0px !important;
+    }
+    
+    .sec01 p, .sec01 .btn_destaque{
+        margin-left: 20px;
+    }
+    
+    .sec01{
+        text-align: center;
+    }
+    
+    .metade{
+        width: 100%;
+        margin-left: 20px;
+    }
+    
+    .fundobody6 .img_sec03{
+        width: 92.5%;
+    }
+    
+    .sec03{
+        height: 780px;
+        border-bottom: 1px solid rgb(204, 204, 204);
+    }
+    
+    .sec03 p{
+        padding-top: 30px;
+        text-align: center;
+        margin-right: 20px;
+    }
+    
+    .sec03 .btn_destaque{
+        margin-left: 140px;
+    }
+    
+    .quadro123{
+        width: 100%;
+        border-bottom: 1px solid rgb(204, 204, 204);
+        padding-left: 20px;
+    }
+    
+    .margin_left{
+        margin-left: 0px;
+    }
+    
+    .quadro123 .logo{
+        width: 80%;
+    }
+    
+    .container_logo{
+       text-align: center; 
+    }
+    
+}
+
+
+
+
+
+
+
+
