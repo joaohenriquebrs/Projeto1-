@@ -47,26 +47,29 @@
                 
                 <div class="metade form"> 
 
-                    <form id="formulario" onsubmit="submitform(event)">
+                    <form name="form_contato" enctype="application/x-www-form-urlencoded" method="get">
 
                         <label for="NomeCompleto">Nome</label>
-                        <input id="NomeCompleto" type="text" name="Nome_completo" placeholder="Digite seu nome completo"/>
+                        <input id="NomeCompleto" type="text" name="Nome_completo" placeholder="Digite seu nome completo" autocomplete="off"/>
                         <br />
 
                         <label for="Email">Email</label>
-                        <input id="Email" type="text" name="Email" placeholder="Digite seu email"/>
+                        <input id="Email" type="text" name="Email" placeholder="Digite seu email" autocomplete="off"/>
                         <br />
 
                         <label for="Telefone">Telefone</label>
-                        <input id="Telefone" type="text" name="Telefone" placeholder="Digite seu telefone"/>
+                        <input id="Telefone" type="text" name="Telefone" placeholder="Digite seu telefone" autocomplete="off"/>
                         <br />
 
                         <label for="Mensagem">Mensagem</label>
-                        <textarea id="Mensagem" name="Mensagem"></textarea>
+                        <textarea id="Mensagem" name="Mensagem" placeholder="Digite sua mensagem" ></textarea>
                         <br />
                         
-
-                        <input type="submit" text="Enviar" />
+                        <span class="texto">Caracteres</span>
+                        
+                        <br />
+                        
+                        <input type="submit" value="Enviar" class="botao_enviar"/>
                         
                     </form>
 

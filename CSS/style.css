@@ -15,7 +15,11 @@ html{
 
 body{
     margin: 0px;
-    font-family: "Raleway", "Existence", "Arial", sans-serif;
+    font-family: "Existence", "Raleway",  "Arial", sans-serif;
+}
+
+textarea, input{
+    font-family: "Raleway", sans-serif;
 }
 
 .barra_superior{
@@ -293,7 +297,7 @@ nav a.btn_destaque{
     padding-left: 20px;
     background-color: oldlace;
     border: 1px solid rgb(136, 136, 136);
-    height: 200px;
+    height: 220px;
     top: 50%;
     margin-top: -100px;
     left: 50%;
@@ -318,7 +322,15 @@ span.nao_valido{
     display: none;
 }
 
-input.nao_valido{
+input.nao_valido, textarea.nao_valido {
     border-bottom: 1px solid red !important;
+}
+
+.texto {
+    color: gray;
+    float:right;
+    font-size: 12px;
+    line-height: 12px;
+    padding-right: 25px;
 }
 
